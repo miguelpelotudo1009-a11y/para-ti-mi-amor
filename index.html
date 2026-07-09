@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para Jessica ❤️</title>
-    <!-- Vinculación de fuentes elegantes -->
     <link href="https://googleapis.com" rel="stylesheet">
-    <!-- Vinculación del archivo de estilos externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Fondo de espacio o estrellas fijas -->
     <div class="stars"></div>
 
     <!-- PANTALLA DE INGRESO (CONTRASEÑA) -->
@@ -26,18 +23,43 @@
         </div>
     </div>
 
-    <!-- CONTENEDOR DEL LIBRO (SE OCULTA AL INICIO) -->
+    <!-- CONTENEDOR DEL LIBRO DIGITAL -->
     <div id="book-container">
-        <div class="page">
-            <h1>PARA JESSICA,<br>EL AMOR DE MI VIDA ❤️</h1>
-            <p class="note">Para leer bien este libro, abre el enlace:</p>
-            <a href="https://spotify.com" target="_blank" class="spotify-btn">
-                <span>🎵</span> Escuchar Die For You - The Weeknd
-            </a>
+        <div class="book">
+            
+            <!-- PÁGINA 1: BIENVENIDA Y SPOTIFY -->
+            <div class="page active" id="page-1">
+                <h1>PARA JESSICA,<br>EL AMOR DE MI VIDA ❤️</h1>
+                <p class="note">Para leer bien este libro, abre el enlace:</p>
+                <a href="https://spotify.com" target="_blank" class="spotify-btn">
+                    <span>🎵</span> Escuchar Die For You
+                </a>
+            </div>
+
+            <!-- PÁGINA 2: TU CARTA DE AMOR -->
+            <div class="page" id="page-2">
+                <h1>Nuestro Comienzo ✨</h1>
+                <p>Desde que llegaste a mi vida, todo cambió por completo. Cada momento a tu lado se ha convertido en mi recuerdo favorito y no hay un solo día en el que no agradezca haberte conocido.</p>
+                <p>Eres mi apoyo, mi sonrisa diaria y mi lugar seguro en el mundo.</p>
+            </div>
+
+            <!-- PÁGINA 3: PROMESAS Y DESPEDIDA -->
+            <div class="page" id="page-3">
+                <h1>Mi Promesa 🌹</h1>
+                <p>Prometo cuidarte, hacerte reír cuando lo necesites y elegirte una y otra vez, sin importar la distancia o los desafíos que se nos presenten en el camino.</p>
+                <p>Este libro recién empieza a escribirse... Te amo para siempre. ❤️</p>
+            </div>
+
+            <!-- CONTROLES DE NAVEGACIÓN -->
+            <div class="nav-controls">
+                <button id="prev-btn" onclick="cambiarPagina(-1)" disabled>◀ Anterior</button>
+                <span id="page-number">Pág. 1 de 3</span>
+                <button id="next-btn" onclick="cambiarPagina(1)">Siguiente ▶</button>
+            </div>
+
         </div>
     </div>
 
-    <!-- Vinculación de la lógica de JavaScript externo -->
     <script src="script.js"></script>
 </body>
 </html>
