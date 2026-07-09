@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Jessica ❤️</title>
+    <!-- Vinculación de fuentes elegantes -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <!-- Vinculación del archivo de estilos externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fondo de espacio o estrellas fijas -->
+    <div class="stars"></div>
+
+    <!-- PANTALLA DE INGRESO (CONTRASEÑA) -->
+    <div id="password-screen">
+        <div class="password-box">
+            <h1>📖</h1>
+            <h2>Nuestros Recuerdos</h2>
+            <p>Introduce nuestra fecha especial para abrir el libro.</p>
+            <input type="text" id="password-input" placeholder="D M AAAA">
+            <button onclick="verificarPassword()">Abrir libro</button>
+            <div id="error-msg"></div>
+        </div>
+    </div>
+
+    <!-- CONTENEDOR DEL LIBRO (SE OCULTA AL INICIO) -->
+    <div id="book-container">
+        <div class="page">
+            <h1>PARA JESSICA,<br>EL AMOR DE MI VIDA ❤️</h1>
+            <p class="note">Para leer bien este libro, abre el enlace:</p>
+            <a href="https://spotify.com" target="_blank" class="spotify-btn">
+                <span>🎵</span> Escuchar Die For You - The Weeknd
+            </a>
+        </div>
+    </div>
+
+    <!-- Vinculación de la lógica de JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
