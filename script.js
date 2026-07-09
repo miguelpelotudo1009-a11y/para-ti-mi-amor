@@ -6,8 +6,8 @@ function verificarPassword() {
     const entrada = document.getElementById('password-input').value.trim();
     const error = document.getElementById('error-msg');
     
-    // Contraseña asignada exactamente
-    const claveCorrecta = "7 06 2026";
+    // Contraseña actualizada que solicitaste
+    const claveCorrecta = "7 05 2026";
 
     if (entrada === claveCorrecta) {
         document.getElementById('password-screen').style.display = 'none';
@@ -20,7 +20,6 @@ function verificarPassword() {
 
 // Función interactiva para saltar entre las páginas del libro
 function cambiarPagina(direccion) {
-    // Calcula la nueva página validando los límites (1 a 3)
     let nuevaPagina = paginaActual + direccion;
     if (nuevaPagina < 1 || nuevaPagina > totalPaginas) return;
 
