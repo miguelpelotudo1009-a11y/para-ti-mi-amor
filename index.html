@@ -1,140 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Para Ti ❤️</title>
+<title>Para Jessica ❤️</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div id="petals"></div>
+<div id="stars"></div>
 
-<div class="contador">
+<div id="password-screen">
 
-❤️ Juntos desde
+    <div class="password-box">
 
-<div id="dias"></div>
+        <h1>📖</h1>
 
-</div>
+        <h2>Este libro guarda nuestros recuerdos</h2>
 
-<div class="book">
+        <p>Introduce la contraseña para abrirlo.</p>
 
-<div class="page portada">
+        <input
+        type="text"
+        id="password"
+        placeholder="Contraseña">
 
-<h1>Para la mujer de mi vida ❤️</h1>
+        <button onclick="checkPassword()">
 
-<p>Jessica</p>
+            Abrir libro
 
-<button id="abrir">
-Abrir nuestro libro
-</button>
+        </button>
 
-</div>
+        <p id="error"></p>
 
-<div class="page">
-
-<img src="foto1.jpg">
-
-<h2>Nuestro comienzo</h2>
-
-<p>
-
-Desde el 7 de mayo mi vida cambió para siempre.
-
-No sabía que una persona podía hacerme sentir tan feliz hasta que apareciste tú.
-
-</p>
+    </div>
 
 </div>
 
-<div class="page">
+<div id="book-container">
 
-<img src="foto2.jpg">
+<div id="book">
 
-<h2>Contigo</h2>
+<div class="cover">
 
-<p>
+<h1>PARA JESSICA</h1>
 
-No importa la distancia.
-
-Siempre encontraré el camino para volver a abrazarte.
-
-</p>
+<p>❤️</p>
 
 </div>
 
 <div class="page">
 
-<img src="foto3.jpg">
+<h1>
 
-<h2>Mi lugar favorito</h2>
+PARA JESSICA,
 
-<p>
+<br>
 
-Mi lugar favorito siempre será donde estés tú.
+EL AMOR DE MI VIDA ❤️
 
-Porque contigo todo se siente como casa.
-
-</p>
-
-</div>
-
-<div class="page">
-
-<img src="foto4.jpg">
-
-<h2>Promesa</h2>
+</h1>
 
 <p>
 
-Prometo cuidarte.
-
-Prometo hacerte reír.
-
-Prometo elegirte una y otra vez.
+Para leer este libro como fue pensado...
 
 </p>
-
-</div>
-
-<div class="page final">
-
-<h1>Te Amo ❤️</h1>
 
 <p>
 
-Gracias por existir.
-
-Gracias por hacerme tan feliz.
-
-Espero que este solo sea el comienzo de nuestra historia.
-
-Siempre tú.
-
-Siempre nosotros.
+Ponte unos auriculares y escucha esta canción.
 
 </p>
 
-<a class="spotify"
+<a
+
+href="https://open.spotify.com/search/Die%20For%20You%20The%20Weeknd"
 
 target="_blank"
 
-href="https://open.spotify.com/track/2Ch7LmS7r2Gy2kc64wv3Bz">
+class="spotify"
 
-🎵 Die For You
+>
+
+🎵 Escuchar Die For You
 
 </a>
+
+</div>
 
 </div>
 
@@ -143,4 +105,5 @@ href="https://open.spotify.com/track/2Ch7LmS7r2Gy2kc64wv3Bz">
 <script src="script.js"></script>
 
 </body>
+
 </html>
