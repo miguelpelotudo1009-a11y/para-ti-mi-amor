@@ -84,7 +84,7 @@ body {
 #book-container {
     display: none;
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     padding: 20px;
     box-sizing: border-box;
     animation: fadeIn 0.8s ease-in-out forwards;
@@ -96,8 +96,9 @@ body {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
     border-left: 8px solid #e6dfd5;
     position: relative;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
-    padding-bottom: 70px; /* Espacio para que los botones de navegación no pisen el texto */
 }
 
 /* Efecto visual de lomo de libro */
@@ -113,7 +114,7 @@ body {
 .page {
     display: none; /* Ocultas por defecto */
     color: #1a1a1a;
-    padding: 50px 35px 20px 35px;
+    padding: 40px 30px 85px 30px; /* Margen inferior grande para no chocar con los botones */
     text-align: center;
     box-sizing: border-box;
 }
@@ -126,20 +127,20 @@ body {
 
 .page h1 {
     font-family: 'Cinzel', serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: #800f2f;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     line-height: 1.4;
 }
 
 .page p {
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.6;
     color: #333333;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
-.page .note { font-size: 0.9rem; color: #666666; font-style: italic; margin-top: 25px; }
+.page .note { font-size: 0.85rem; color: #666666; font-style: italic; margin-top: 20px; }
 
 /* Botón Spotify */
 .spotify-btn {
@@ -159,17 +160,29 @@ body {
 .spotify-btn:hover { transform: scale(1.05); }
 .spotify-btn span { margin-right: 8px; }
 
-/* --- BOTONES DE CAMBIO DE PÁGINA --- */
+/* FOTOS DEL LIBRO */
+.book-img {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    border-radius: 12px;
+    margin: 5px 0 15px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border: 3px solid #ffffff;
+}
+
+/* --- BOTONES DE CAMBIO DE PÁGINA (ESTABLECIDOS FIJOS EN LA BASE DE LA COLUMNA) --- */
 .nav-controls {
     position: absolute;
     bottom: 0; left: 0; right: 0;
-    height: 60px;
+    height: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 25px;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
     background-color: #f7f2e8;
+    z-index: 20;
 }
 
 .nav-controls button {
@@ -179,7 +192,7 @@ body {
     padding: 8px 16px;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 600;
     transition: background 0.2s;
 }
