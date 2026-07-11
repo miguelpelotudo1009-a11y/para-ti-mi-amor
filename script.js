@@ -1,12 +1,12 @@
-// Variable global para controlar en qué página está Jessica
+// Variable global para controlar en qué página está Jessica (Ahora son 7)
 let paginaActual = 1;
-const totalPaginas = 3;
+const totalPaginas = 7;
 
 function verificarPassword() {
     const entrada = document.getElementById('password-input').value.trim();
     const error = document.getElementById('error-msg');
     
-    // Contraseña actualizada que solicitaste
+    // Contraseña asignada
     const claveCorrecta = "7 05 2026";
 
     if (entrada === claveCorrecta) {
